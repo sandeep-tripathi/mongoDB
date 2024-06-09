@@ -25,22 +25,11 @@ new_account = {
     "last_updated": datetime.datetime.utcnow(),
 }
 
-# TODO: Write an expression that inserts the 'new_account' document into the 'accounts' collection. Assign the result of the insert operation to a variable named 'result'.
-
+# Expression that inserts the 'new_account' document into the 'accounts' collection. Assign the result of the insert operation to a variable named 'result'.
+result = accounts_collection.insert_one(new_account)
 
 document_id = result.inserted_id
 print(f"_id of inserted document: {document_id}")
 
 client.close()
 
-# Document to insert
-#new_account = {
-#    "account_holder": "Linus Torvalds",
-#    "account_id": "MDB829001337",
- #   "account_type": "checking",
- #   "balance": 50352434,
- #   "last_updated": datetime.datetime.utcnow(),
-#}
-
-# TODO: Write an expression that inserts the 'new_account' document into the 'accounts' collection. Assign the result of the insert operation to a variable named 'result'.
-#result = accounts_collection.insert_one(new_account)
