@@ -78,3 +78,4 @@ with client.start_session() as session:
     session.with_transaction(callback_wrapper)
 
 client.close()
+# Transaction is either all or none = Atomicity
