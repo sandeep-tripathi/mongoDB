@@ -1,2 +1,2 @@
 # mongoDB
-CRUD operations in MongoDB with Python
+CRUD operations and aggregation in MongoDB with Python
