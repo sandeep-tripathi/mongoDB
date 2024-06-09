@@ -62,7 +62,7 @@ def callback(
 
     return
 
-
+# Normally you use Lambda function instead of callback_wrapper
 def callback_wrapper(s):
     callback(
         s,
