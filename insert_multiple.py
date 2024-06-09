@@ -42,3 +42,9 @@ print("# of documents inserted: " + str(len(document_ids)))
 print(f"_ids of inserted documents: {document_ids}")
 
 client.close()
+
+
+## Running in mongo shell
+#root@mongodb:/python_app# python3 insert_multiple.py
+# of documents inserted: 2
+#_ids of inserted documents: [ObjectId('666587c1b9f394638526ee97'), ObjectId('666587c1b9f394638526ee98')]
